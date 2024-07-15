@@ -16,5 +16,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
+      - name: bundle install
+        run: bundle install
       - name: テスト実行
         run: rails test
